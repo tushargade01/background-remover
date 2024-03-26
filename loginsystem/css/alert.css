@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background-color: black;
+  color: white;
+}
+.alert_box,
+.show_button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.background{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.alert_box{
+  padding: 30px;
+  display: flex;
+  background-color:#313131;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 5px;
+  z-index: 2;
+  transform: translate(-50% , -50%) scale(0.97);
+  transition: all 0.3s ease;
+}
+
+.alert_box .icon{
+  height: 100px;
+  width: 100px;
+  color: rgb(254, 254, 254);
+  border: 3px solid #8d14ff;
+  border-radius: 50%;
+  line-height: 97px;
+  font-size: 50px;
+}
+.alert_box header{
+  font-size: 35px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.alert_box p{
+  font-size: 20px;
+}
+.alert_box .btns{
+  margin-top: 20px;
+}
+.button-sec{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.button-sec a{
+  background-color: #8d14ff;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  font-family: Arial;
+  font-weight: 700;
+}
+.mylink{
+  z-index: 10;
+}
