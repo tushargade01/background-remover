@@ -8,9 +8,9 @@ if(isset($_POST['update']))
 {
     $fname=$_POST['fname'];
     $lname=$_POST['lname'];
-    $contact=$_POST['contact'];
+  
 $userid=$_GET['uid'];
-    $msg=mysqli_query($con,"update users set fname='$fname',lname='$lname',contactno='$contact' where id='$userid'");
+    $msg=mysqli_query($con,"update users set fname='$fname',lname='$lname' where id='$userid'");
 
 if($msg)
 {
