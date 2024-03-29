@@ -66,7 +66,7 @@ btnDownload.addEventListener('click', function () {
         ctx.drawImage(img, 0, 0);
         canvas.toBlob(function (blob) {
             let newFileName;
-            if(colorImage == 'rgb(255, 13, 13)' || colorImage == '#4297ff' || colorImage == '#f677ff'){
+            if(colorImage == 'rgb(255, 13, 13)' || colorImage == 'rgb(66, 151, 255)' || colorImage == 'rgb(246, 119, 255)'){
                 newFileName = inputFile.files[0].name.replace(/\.[^/.]+$/, "") + "-bgremover.jpeg";
             }else{
                 newFileName = inputFile.files[0].name.replace(/\.[^/.]+$/, "") + "-bgremover.png";
