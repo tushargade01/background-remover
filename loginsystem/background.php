@@ -1,6 +1,6 @@
 <?php session_start();
 include_once('includes/config.php');
-if (strlen($_SESSION['id']==0)) {
+if (!isset($_SESSION['id']) || strlen($_SESSION['id']) == 0) {
   header('location:includes/alert.php');
   } else{
     
@@ -10,7 +10,7 @@ if (strlen($_SESSION['id']==0)) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>remove background</title>
   <link href="css/styles.css" rel="stylesheet" />
   <link href="css/nav.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -24,8 +24,6 @@ if (strlen($_SESSION['id']==0)) {
 <?php
 if(isset($_SESSION['id'])){
     include('includes/navuser.php');
-}else{
-    include('includes/navbar.php');
 }
 ?>
 <section id="remove-background-section">
