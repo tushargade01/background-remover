@@ -47,7 +47,6 @@ window.onload = function() {
         }
     });
 };
-
 function imgSelection(img) {
     console.log(img);
     let expandImg;
