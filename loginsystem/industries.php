@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,6 @@
 </head>
 <body>
 <?php
-session_start(); 
     if(isset($_SESSION['id'])){
         include('includes/navuser.php');
     }else{
@@ -56,7 +56,7 @@ session_start();
                     </div>
                 </div>
                 <div class="for-phone">
-                <img src="./image/animal_add.png" id="animal3">
+                <img src="./image/animal_add.png" class="image-phone">
             </div>
             </div>
             
@@ -82,7 +82,7 @@ session_start();
                     </div>
                 </div>
                 <div class="for-phone">
-                <img src="./image/people_add.png" id="animal3">
+                <img src="./image/people_add.png" class="image-phone">
             </div>
             </div>
             <div class="car-container">
@@ -107,7 +107,7 @@ session_start();
                     </div>
                 </div>
                 <div class="for-phone">
-                <img src="./image/car_add.png" id="animal3">
+                <img src="./image/car_add.png" class="image-phone">
             </div>
             </div>
             <div class="product-container">
@@ -132,7 +132,7 @@ session_start();
                     </div>
                 </div>
                 <div class="for-phone">
-                <img src="./image/product_add.png" id="animal3">
+                <img src="./image/product_add.png" class="image-phone">
             </div>
             </div>
         </div>
