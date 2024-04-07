@@ -18,7 +18,7 @@ inputFile.addEventListener('change', function () {
     const formData = new FormData();
     formData.append("image_file", image);
     formData.append('size', 'auto');
-    const apiKey = "bgDbBmH97BxYLvwJGzWpjRgm";
+    const apiKey = "sARDiVULBGRN55Dv6E3pQpmT";
     fetch('https://api.remove.bg/v1.0/removebg', {
         method: "POST",
         headers: {
