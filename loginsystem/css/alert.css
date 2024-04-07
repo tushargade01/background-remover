@@ -79,3 +79,13 @@ body{
 .mylink{
   z-index: 10;
 }
+
+
+@media (max-width: 768px) {
+    .alert_box{
+  padding: 10px;
+  max-width: 350px;
+  width: 100%;
+ 
+}
+}
